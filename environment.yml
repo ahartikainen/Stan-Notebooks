@@ -1,0 +1,25 @@
+name: stan
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  # Jupyter
+  - jupyterlab
+  - nodejs
+  - nbconvert
+  - widgetsnbextension
+  # Python Kernel
+  - ipykernel
+  - ipywidgets
+  # C++
+  - gcc_linux-64
+  - gxx_linux-64
+  # Stan
+  - arviz
+  - bokeh
+  - cython
+  - matplotlib
+  - numpy
+  - pandas
+  - pystan
+  - xarray
