@@ -1,4 +1,9 @@
-export CC=gcc_linux-64
-export CXX=g++_linux-64
-export CFLAGS="$CFLAGS:-flto"
-export CXXFLAGS="$CXXFLAGS:-flto"
+#!/bin/bash
+set -ex
+
+jupyter nbextension enable --py widgetsnbextension
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+
+conda activate stan
+python -m pip install cmdstanpy[all]
+python -m cmdstanpy.install_cmdstan
