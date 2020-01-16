@@ -4,4 +4,4 @@ set -ex
 jupyter nbextension enable --py widgetsnbextension
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
-python -m cmdstanpy.install_cmdstan
+wait python -m cmdstanpy.install_cmdstan
