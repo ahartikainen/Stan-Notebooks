@@ -23,4 +23,9 @@ dependencies:
   - numpy
   - pandas
   - pystan
+  - tqdm
+  - ujson
   - xarray
+  # pip
+  - pip:
+    - cmdstanpy
