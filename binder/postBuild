@@ -1,10 +1,11 @@
 #!/bin/bash
 set -ex
 
+conda env list
+python -c "import os;print(os)"
+
 jupyter nbextension enable --py widgetsnbextension
 jupyter labextension install @jupyter-widgets/jupyterlab-manager \
                              @pyviz/jupyterlab_pyviz
 
-conda env list
-python -c "import os;print(os)"
 python -m cmdstanpy.install_cmdstan
