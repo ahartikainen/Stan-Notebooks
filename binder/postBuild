@@ -1,2 +1,2 @@
-export CC=gcc_linux-64 -flto
-export CXX=g++_linux-64 -flto
+export CC="gcc_linux-64 -flto"
+export CXX="g++_linux-64 -flto"
