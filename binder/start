@@ -1,0 +1,8 @@
+#!/bin/bash
+set -ex
+
+export CC=gcc_linux-64
+export CXX=g++_linux-64
+
+export CFLAGS="$CFLAGS -flto"
+export CXXFLAGS="$CXXFLAGS -flto"
